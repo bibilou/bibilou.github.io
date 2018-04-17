@@ -5,53 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CV</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Play for fun</title>
+    <link rel="stylesheet" href="teacher's style.css">
 </head>
 
 <body>
-    <h2>一、基本介绍</h2>
-    <hr>
-    <ul type="circle">
-        <img src="H:\计算机\JavaScript\bibilou.github.io\self.jpg" width="200px">
-        <li>
-            <h3>姓名：vivian qiu</h3>
-        </li>
-        <li>
-            <h3>性别：女</h3>
-        </li>
-        <li>
-            <h3>联系方式：wechat:qy18271656026</h3>
-        </li>
-        <li>
-            <h3>生日：04.14</h3>
-        </li>
-        <li>
-            <h3>兴趣：音乐、阅读、计算机</h3>
-        </li>
-        <h4>
-            <a color="#FF0036" href="form.html">表单链接</a>
-        </h4>
-    </ul>
-    <hr>
-    <h2>二、教育背景Education</h2>
-    <table style="width:100%">
-        <tr>
-            <td><h3>时间</h3></td>
-            <td><h3>学校</h3></td>
-            <td><h3>职务</h3></td>
-        </tr>
-        <tr>
-            <td>2016-2018</td>
-            <td>上海对外经贸大学</td>
-            <td>学生</td>
-        </tr>
-        <tr>
-            <td>2013-2016</td>
-            <td>育贤中学</td>
-            <td>学生</td>
+    <div class="container">
+        <div class="biaoti">
+            <h2 font-weight:bolder>bibilou</h2>
+            <img src="猫.jpg" alt="图片不见鸟" width="250px">
+            <!-- 在这里加<br>无效 -->
 
-            <hr>
+        </div>
+        <!-- 在这里加<br>才有效 -->
+        <div class="lianjie">
+            <!-- 在这个div里面加内联样式没有用，要用class -->
+
+            <a href="form.html" style="color:antiquewhite">表单链接</a>
+            |
+            <a href="hezi.htm" style="color:antiquewhite">CSS布局</a>
+            |
+            <a href="http://job.suibe.edu.cn/eweb/login.jsp?reurl=%2F%2Findex.jsp%3Fnull" style="color:antiquewhite">友情链接</a>
+
+
+        </div>
+        <ul>
+            <li>
+                <h3 class="mulu">基本介绍</h3>
+                <ul>
+                    <li>
+                        <b>姓名：</b>邱彦
+                    </li>
+                    <li>
+                        <b>性别：</b>女
+                    </li>
+                    <li>
+                        <b>年龄：</b>18
+                    </li>
+                    <li>
+                        <b>联系方式：</b>*******
+                    </li>
+                </ul>
+            </li>
+            <hr style="background-color:#aa901e ;height:0.5px">
+            <li>
+                <h3 class="mulu">教育背景</h3>
+                <!-- 威为什么不占一行 
+                因为不加h3就不是块级元素-->
+                <table style="width:100%">
+                    <tbody>
+                        <!-- 加不加<tbody>并没有什么区别 -->
+                        <tr>
+                            <td style="font-weight:bolder"> 学校 </td>
+                            <td style="font-weight:bolder">时间</td>
+                            <td style="font-weight:bolder"> 职务</td>
+                        </tr>
+                        <!-- 在学校与标签属性之间加空格并没有什么用 -->
+                        <tr>
+                            <td>育贤中学</td>
+                            <td>2010-2016</td>
+                            <td>dcvsh</td>
+                        </tr>
+                        <tr>
+                            <td>盼盼小学</td>
+                            <td>2004-2010</td>
+                            <td>dcvsh</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- </table> 这个标签在哪儿，表格就会在哪儿！ -->
+                <hr style="background-color:#aa901e;height:0.5px">
+            </li>
+            <li>
+                <h3 class="mulu">工作经验</h3>
+                <ol>
+                    <li>vfjbby</li>
+                    <li>vfjbby</li>
+                    <li>vfjbby</li>
+                    <li>vfjbby</li>
+                </ol>
+            </li>
+
+            <hr style="background-color:#aa901e ;height:0.5px">
+            <li>
+                <h3 class="mulu">自我评价</h3>
+                <p>jmlkfigmvhrtjcmveflhduvort hsdinvkhsmcwskvn
+                    <br> xgcsrvbjyrtknugfbkl,hvrshlscst
+                </p>
+            </li>
+        </ul>
+    </div>
 
 
 </body>
