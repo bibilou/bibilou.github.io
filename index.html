@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Play for fun</title>
+    <link rel="stylesheet" href="teacher's style.css">
+</head>
+
+<body>
+    <div class="header">
+            <script>
+                    function isleapyear(y) {
+                        if (y % 400 == 0) {
+                            return "是";
+                        }
+                        if (y % 4 == 0 && y % 100 != 0) {
+                            return "是";
+                        }
+                        return "否";
+                    }
+            
+                    function clickit() {
+                        var y = document.getElementById("year").value;
+            
+                        var out = document.getElementById("isyear")
+                        out.innerText = isleapyear(parseInt(y))
+                    }
+                    
+            
+                </script>
+            </head>
+            
+            <body>
+                是否是闰年？
+                <span id="isyear"></span><br/>
+                <input type="text" id="year">
+                <button onclick="clickit()">计算</button>
+            </body>
+    </div>
+    <div class="left">定位</div>
+    <div class="container">
+        <div class="biaoti">
+            <h2 font-weight:bolder>bibilou</h2>
+            <img src="猫.jpg" alt="图片不见鸟" width="250px">
+            <!-- 在这里加<br>无效 -->
+
+        </div>
+        <!-- 在这里加<br>才有效 -->
+        <div class="lianjie">
+            <!-- 在这个div里面加内联样式没有用，要用class -->
+
+            <a href="form.html" style="color:antiquewhite">表单链接</a>
+            |
+            <a href="hezi.htm" style="color:antiquewhite">CSS布局</a>
+            |
+            <a href="http://job.suibe.edu.cn/eweb/login.jsp?reurl=%2F%2Findex.jsp%3Fnull" style="color:antiquewhite">友情链接</a>
+
+
+        </div>
+        <ul>
+            <li>
+                <h3 class="mulu">基本介绍</h3>
+                <ul>
+                    <li>
+                        <b>姓名：</b>邱彦
+                    </li>
+                    <li>
+                        <b>性别：</b>女
+                    </li>
+                    <li>
+                        <b>年龄：</b>18
+                    </li>
+                    <li>
+                        <b>联系方式：</b>*******
+                    </li>
+                </ul>
+            </li>
+            <hr style="background-color:#aa901e ;height:0.5px">
+            <li>
+                <h3 class="mulu">教育背景</h3>
+                <!-- 威为什么不占一行 
+                因为不加h3就不是块级元素-->
+                <table style="width:100%">
+                    <tbody>
+                        <!-- 加不加<tbody>并没有什么区别 -->
+                        <tr>
+                            <td style="font-weight:bolder"> 学校 </td>
+                            <td style="font-weight:bolder">时间</td>
+                            <td style="font-weight:bolder"> 职务</td>
+                        </tr>
+                        <!-- 在学校与标签属性之间加空格并没有什么用 -->
+                        <tr>
+                            <td>育贤中学</td>
+                            <td>2010-2016</td>
+                            <td>dcvsh</td>
+                        </tr>
+                        <tr>
+                            <td>盼盼小学</td>
+                            <td>2004-2010</td>
+                            <td>dcvsh</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- </table> 这个标签在哪儿，表格就会在哪儿！ -->
+                <hr style="background-color:#aa901e;height:0.5px">
+            </li>
+            <li>
+                <h3 class="mulu">工作经验</h3>
+                <ol>
+                    <li>vfjbby</li>
+                    <li>vfjbby</li>
+                    <li>vfjbby</li>
+                    <li>vfjbby</li>
+                </ol>
+            </li>
+
+            <hr style="background-color:#aa901e ;height:0.5px">
+            <li>
+                <h3 class="mulu">自我评价</h3>
+                <p>jmlkfigmvhrtjcmveflhduvort hsdinvkhsmcwskvn
+                    <br> xgcsrvbjyrtknugfbkl,hvrshlscst
+                </p>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="right">定位</div>
+    <div class="footer">
+        <script>
+            for (var i = 1; i <= 9; i++) {
+                for (var j = 1; j <= i; j++) {
+                    document.write("&nbsp;&nbsp;&nbsp;&nbsp;" + i + " * " + j + " = " + i * j)
+                }
+                document.write("<br>")
+            }
+        </script>
+        <script>
+            n = 3
+            for (var i = 1; i <= n + 1; i++) {
+                for (var j = n - i + 1; j >= 1; j--) {
+                    document.write('-')
+                }
+                for (var j = 1; j <= i * 2 - 1; j++) {
+                    document.write('*')
+                }
+                document.write('<br>')
+            }
+            for (var i = n; i >= 1; i--) {
+                for (var j = n - i + 1; j > 0; j--) {
+                    document.write('-')
+                }
+                for (var j = 1; j <= i * 2 - 1; j++) {
+                    document.write('*')
+                }
+                document.write('<br>')
+            }
+        </script>
+        <script>
+                var sum1 = 0;
+                var sum2 = 0;
+                var sum3 = 0;
+                for (var i = 1; i <= 100; i++) {
+                    sum1 += i;
+                }
+                var i = 1;
+                while (i <= 100) {
+                    sum2 += i;
+                    i++;
+                }
+                i = 1;
+                do {
+                    sum3 += i;
+                    i++;
+                } while (i <= 100);
+        
+                document.write(sum1 + "<br>" + sum2 + "<br>" + sum3)
+            </script>
+
+    </div>
+
+</body>
+
+</html>
