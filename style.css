@@ -1,44 +1,47 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
-    padding: 0;
-    margin: 0;
+    padding-left: 50px;
+    margin-top: 40px;
+    /* 为什么这里的 margin: 0 auto; 没有用？ */
+}
+
+
+table {
     text-align: center;
-    margin: 5 auto;
+   
+    line-height: 30px;
 }
 
-a {
-    text-decoration: none;
-    color: #f58427;
-}
-
-h1 {
-    text-align: center;
-}
-
-table{
-    text-align: center;
-    font-weight: bold;
-}
-
-p{
+p {
     text-indent: 20px;
 }
 
-h3{
-    background-color: #c23232;
-    color: rgb(233, 181, 181);
+.mulu {
+    background-color: #8f785a;
+    color: white;
+    text-align: left;
+    font-weight: lighter;
     line-height: 30px;
-    padding-left:10px;
-}
+    padding-left: 10px;
+   
 
-.dt {
-    text-align: center;
 }
 
 .container {
-    width: 600px;
+    width: 1200px;
     margin: 0 auto;
     padding: 10px 20px;
-    margin-top: 0;
-    background-image: url("bg.jpg")
+    background-image: url("背景图片.jpg");
+    height: 1000px;
+    font-weight: bold;
+}
+
+
+.biaoti {
+    text-align: center;
+}
+.lianjie{
+    color:antiquewhite;
+    /* color 无效 */
+    font-weight:lighter;
 }
